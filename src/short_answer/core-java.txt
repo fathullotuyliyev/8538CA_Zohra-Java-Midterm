@@ -155,10 +155,9 @@ API stands for “Application Programming Interface”
 An API is a software intermediary that allows two applications to talk to each other. In
 other words, an API is the messenger that delivers our request to the provider that we are
 requesting it from and then delivers the response back to us.
-
-- Log-in using GitHub;
-- log-in using Discord;
-- paid with PayPal when I purchased CodeLab,
+    - Log-in using GitHub;
+    - log-in using Discord;
+    - paid with PayPal when I purchased CodeLab.
 
 
 Does java support multiple inheritance? Why or why not?
