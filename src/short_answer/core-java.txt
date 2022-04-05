@@ -278,19 +278,38 @@ JVM stands for Java Virtual Machine
 
 Is JVM platform independent?
 Answer:
-JVM platform is not independent
+Java Virtual Machine is not platform independent, the JVM depends on the operating system.
 
 What version of Java are you using?
 Answer:
+java 11.0.14
 
 What does JAR stand for?
 Answer:
+JAR stands for Java ARchive.
 
 What is the difference between JDK and JVM?
 Answer:
+- JDK is Java Development Kit, and JVM is Java Virtual Machine;
+- JDK is a software development kit to develop applications in Java, but JVM executes Java byte code and provides an
+environment for executing it. This means that the JDK is what we need to compile Java source code, whereas, the JVM
+actually runs Java bytecode.
+- JDK contains tools for developing, debugging, and monitoring java code, however Software development tools are
+not included in JVM;
+- JDK enables developers to create Java programs that can be executed and run by the JRE and JVM, when JVM is the Java
+platform component that executes source code;
+- JDK comes with the installer, but JVM bundled in both software JDK and JRE.
 
 What is the difference between JVM and JRE?
 Answer:
+- JVM is an engine that provides a runtime environment to drive the Java Code or applications, it converts Java bytecode
+into machine language. JVM is a part of Java Run Environment (JRE), it cannot be separately downloaded and installed.
+In order to install JVM, we need to install JRE;
+- JVM is an environment for executing bytecode, whereas JRE is a software bundle that allows Java program to run;
+- JRE contains class libraries and other supporting files, whereas software development tools are not included in JVM;
+- JRE contains class libraries and other supporting files that JVM requires to execute the program, whereas JVM is
+bundled in the JRE software;
+- JRE is the subset of JDK, but JVM is the subset of JRE.
 
 Explain the difference between compile-time and run-time?
 Answer:
