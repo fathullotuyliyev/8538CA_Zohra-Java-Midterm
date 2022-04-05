@@ -162,15 +162,44 @@ requesting it from and then delivers the response back to us.
 
 Does java support multiple inheritance? Why or why not?
 Answer:
+No, Java does not support multiple inheritance.
+The problem with multiple inheritance is that if multiple parent classes have the same method name, then at runtime it
+becomes difficult for the compiler to decide which method to execute from the child class. Therefore, Java does not
+support multiple inheritance.
 
 What is method overloading? List all of the different ways to overload.
 Answer:
+Overloading occurs when two or more methods in one class have the same method name but different parameters.
+Method Overloading is a compile-time polymorphism.
+In Method Overloading, Methods of the same class shares the same name but accepting:
+    - different number of parameters;
+    - different data types of parameters or
+    - different order of parameters (different data type and different order).
+Method Overloading is to “add” or “extend” more to the method’s behavior, the methods must have a different signature.
 
 Explain exceptions in java and how to handle them.
 Answer:
+an exception in java is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
+exception handling however, is a mechanism to handle runtime errors such as ClassNotFoundException, IOException,
+SQLException, RemoteException, etc.
+The try-catch is the simplest method of handling exceptions. We put the code we want to run in the try block, and any
+exception that the code throws are caught by one or more catch blocks.
+This method will catch any type of Java exceptions that get thrown.
+We can also specify specific exceptions we would like to catch, this allows us to have dedicated code to recover from
+those errors and treat those conditions separately.
+In addition, any code that must be executed irrespective of occurrence of an exception is put in a finally block.
+A finally block is executed in all circumstances.
 
 What is static keyword? When and how do we use it?
 Answer:
+The static keyword is a non-access modifier that is applicable for blocks, variables, methods, and classes.
+Static means unchanging or not changeable, which means we can change the value of it but the place in memory remains
+static. It is mainly used for memory management, once we re-assign a value to the original, the old value is garbage.
+Static is used when a particular piece of code is to be shared by all the instance methods, and it is also used to share
+the same variable or method of a given class.
+Static is also used for constant variables or methods that are the same for every instance of the class.
+The way the static keyword is used is by creating a static member, either a block, a variable, a method, or a nested
+class, and precede its declaration with the keyword static.
 
 What is final keyword? When and how do we use it?
 Answer:
