@@ -47,10 +47,11 @@ the JVM is bytecode and output is machine code (0’s and 1’s) which will be e
 What is a class?
 Answer:
 A class is a blueprint or representation of a real-world object.
+A class contains variables and methods to describe the behavior of an object.
 
 What is an object?
 Answer:
-in Java, an object is an entity that has states and behaviors. Any object can be described using its
+in Java, an object is a real-world entity that has states and behaviors. Any object can be described using its
 attributes/characteristics and methods/behaviors that object can perform.
 
 What is the entry point of a Java project?
@@ -112,9 +113,13 @@ create objects of the subclass. A subclass must override all abstract methods of
 
 What is Access Modifier?
 Answer:
-An access modifier is a keyword in object-oriented programming that is used to set the accessibility of classes,
-constructors, methods, and other members. Using an access modifier, we can set the scope or accessibility of these
-classes, methods, constructors, and other members.
+Access modifiers are special keywords which are used to restrict the access of a class, constructor, data member and
+method in another class.
+Java supports four types of access modifiers:
+    Default - no keyword required.
+    Private
+    Protected
+    Public
 
 What is OOP? Define each OOP concept.
 Answer:
@@ -140,25 +145,23 @@ Polymorphism is of two types:
 
 What is Java Package and which package is imported by default?
 Answer:
-A java package is a group of similar types of classes, interfaces and sub-packages. In Java, a package can be
-categorized in two form, built-in package and user-defined package. There are many built-in packages such as java,
-lang, awt, javax, swing, net, io, util, sql etc.
-We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two
-categories:
-Built-in Packages (packages from the Java API)
-User-defined Packages (create your own packages)
+In Java, packages are the collection of related classes and interfaces which are bundled together. By using packages,
+developers can easily modularize the code and optimize its reuse. Also, the code within the packages can be imported
+by other classes and reused.
+The use of packages help in avoiding name clashes, provide easier access control on the code, can contain hidden
+classes which are not visible to the outer classes and only used within the package, and create a proper hierarchical
+structure which makes it easier to locate the related classes.
 java. lang package is imported by default.
 
 What is an API? List some API's that you have used so far.
 Answer:
-API stands for “Application Programming Interface”
+API stands for Application Programming Interface.
 An API is a software intermediary that allows two applications to talk to each other. In
 other words, an API is the messenger that delivers our request to the provider that we are
 requesting it from and then delivers the response back to us.
     - Log-in using GitHub;
     - log-in using Discord;
     - paid with PayPal when I purchased CodeLab.
-
 
 Does java support multiple inheritance? Why or why not?
 Answer:
@@ -203,30 +206,79 @@ class, and precede its declaration with the keyword static.
 
 What is final keyword? When and how do we use it?
 Answer:
+The final keyword is a non-access specifier that is used to restrict a class, variable, and method.
+If we initialize a variable with the final keyword, then we cannot modify its value.
+If we declare a method as final, then it cannot be overridden by any subclasses.
+And, if we declare a class as final, we restrict the other classes to inherit or extend it. In other words, the final
+classes can not be inherited by other classes.
+The final keyword is used when declaring an entity, which could be a variable, a class, or a method. Using the final
+keyword prevents value from being modified. Technically, the final keyword is used when we want a variable to
+always store the same value.
 
 Explain the difference between final, finally and finalize?
 Answer:
+1- Definition: final is a keyword and access modifier that is used to apply restrictions on a class, method or variable;
+finally is the block of Exception Handling to execute the important code whether the exception occurs or not. However,
+finalize is the method that is used to perform clean up processing just before object is garbage collected.
+2- Applicable to: Final keyword is used with classes, methods and variables;
+finally block is always related to the try and catch block in exception handling; and
+finalize() method is used with the objects.
+3- functionality: with final keyword:
+    - Once declared, final variable becomes constant and cannot be modified.
+    - final method cannot be overridden by a subclass.
+    - final class cannot be inherited.
+Using finally:
+    - finally block runs the important code even if exception occurs or not.
+    - finally block cleans up all the resources used in try block
+finalize method, however performs the cleaning activities with respect to the object before its destruction.
+4- Execution: the final method is executed only when we call it;
+finally block is executed as soon as the try-catch block is executed, and Its execution is not dependent on the exception.
+finalize method is executed just before the object is destroyed.
 
 What is a constructor?
 Answer:
+A constructor refers to a block of code which is used to initialize an object. It must have the same name as
+that of the class. Also, it has no return type, and it is automatically called when an object is created.
 
 Can we have multiple constructors in a class?
 Answer:
+Yes, a class can have multiple constructors, however, it is not possible to have 2 constructors with the same parameters.
+The technique of having multiple constructors in a class is known as constructor overloading.
 
 If we don't have a constructor declared, what is called during the object creation?
 Answer:
+The default constructor is called, because all classes have constructors, whether we define one or not, Java
+automatically provides a default constructor that initializes all member variables to zero. However, once we define
+our own constructor, the default constructor is no longer used.
 
 What is "this" keyword in Java? When would we use it?
 Answer:
+In Java, "this" is a keyword.
+It is a reference variable that refers to current object of a method or constructor.
+We would use it:
+    - to refer current class instance variables;
+    - to invoke or initiate current class constructor;
+    - to pass it as an argument in the method call;
+    - to pass as argument in the constructor call;
+    - to return the current class instance.
 
 What is "super" keyword in Java? What are some scenarios we would use it?
 Answer:
+in Java, the super keyword is a reference variable that refers to an immediate parent class object.
+When we create a subclass instance, we are also creating an instance of the parent class, which is referenced to by
+the super reference variable.
+The uses of the super Keyword:
+    - To refer to an immediate parent class instance variable;
+    - The keyword super can be used to call the method of an immediate parent class;
+    - Super() can be used to call the constructor of the immediate parent class.
 
 What does JVM stand for?
 Answer:
+JVM stands for Java Virtual Machine
 
 Is JVM platform independent?
 Answer:
+JVM platform is not independent
 
 What version of Java are you using?
 Answer:
