@@ -498,18 +498,57 @@ If another thread is executing the synchronized method, the thread is blocked un
 
 What is a Framework?
 Answer:
+In Java, frameworks are bodies of reusable pre-written code acting as templates that developers can use to create
+applications by filling in custom code as needed. Frameworks are created to be used over and over so that developers
+can program applications without the manual overhead of creating everything from scratch.
 
 What are the testing Frameworks available in Java?
 Answer:
+- Selenium: Selenium is a free and open-source testing framework and is mostly used to test web applications based on
+various platforms.
+- Serenity: Serenity also provides an open-source platform primarily for behavior-driven testing and was earlier known by
+the name Thucydides. Serenity helps you to write clean and structured acceptance criteria for test automation projects.
+- JUnit: this particular framework aims at performing unit testing where a code snippet can be passed in the path, via
+functions or methods. The unit test code is advised to be pre-written before writing any real code when a test-driven
+approach is being followed.
+- TestNG: TestNG is an open-source testing framework and inspired by the other two prominent frameworks – JUnit and
+NUnit with some new additional functionalities. Deriving from its name where NG stands for Next Generation, this
+framework does not disappoint to prove its strength in testing.
+- Cucumber: Cucumber is a testing framework written in Ruby that has been popular among testers because, of the fact
+that it consolidates the documentation along with the specifications and delivers a single report document.
+- JBehave: this is a Java-based testing framework that is mostly found working in conjugation with selenium drivers and
+supports Behavior-driven development (BDD). It comes up with a reporting feature which implies that the reports can be
+generated in the XML, HTML, or Text format.
 
 What are jUnit and testNG?
 Answer:
+JUnit is a framework that aims at performing unit testing where a code snippet can be passed in the path, via
+functions or methods. The unit test code is advised to be pre-written before writing any real code when a test-driven
+approach is being followed.
+After a developer writes any code, the test cases need to be executed before the code snippet can be run. Every time
+a new code is added, the test cases are run again to ensure all the test scenarios are passed and there is no issue in
+the code. This framework stands apart from others because of it being comparatively faster and efficient than other
+similar frameworks.
+TestNG is an open-source testing framework and inspired by the other two prominent frameworks – JUnit and
+NUnit with some new additional functionalities. Deriving from its name where NG stands for Next Generation, this
+framework does not disappoint to prove its strength in testing.
+The process of testing here is also not very complex where we can test the scenarios by requesting through the
+framework to test the databases or maybe the front ends. An HTML report can also be extracted which is quite useful
+for the tests being performed.
 
 What are the dependencies for this project?
 Answer:
+the dependencies for this project are the classes that uses some methods of another class.
 
 What is dependency injection in Java?
 Answer:
+Dependency injection is the concept in which objects get other required objects from outside. dependency injection can
+be implemented in any programming language. The general concept behind dependency injection is called Inversion
+of Control. A Java class has a dependency on another class, if it uses an instance of this class.
 
 Explain what static binding and dynamic binding is?
 Answer:
+In static binding, static members of a class are bounded to memory at compile-time. Static binding uses method and
+constructor overloading.
+In dynamic binding, non-static members of a class are bounded to memory at runtime. Dynamic binding uses method
+overriding.
