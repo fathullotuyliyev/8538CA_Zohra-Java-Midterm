@@ -132,22 +132,65 @@ synchronized, and it cannot be shared between many threads without proper synchr
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
 Answer:
+- HashMaps store mapping in the form of Map.Entry object which contains both key and value object.
+When we want to retrieve the object, we call the get() method and pass the key object. This time, key objects generate
+the same hash code (it is mandatory for it to do so to retrieve the object and that is why HashMap keys
+are immutable) and we end up at the same bucket location.
+- HashMaps are maps based collection which are used to store data in Key-value pairs.
+- Using HashMap makes sense only when unique keys are available for the data we want to store. We should use it when
+searching for items based on a key and quick access time is an important requirement. We should avoid using HashMap
+when it is important to maintain the same order of items in a collection.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
 Answer:
+- ArrayIndexOutOfBoundsException is a class that extends to IndexOutOfBoundsException, it is Thrown to indicate that an
+array has been accessed with an illegal index. The index is either negative or greater than or equal to the length of
+the array.
+- The ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at an index which
+is not present in the array. In other words, the index may be negative or exceed the size of an array.
+ArrayIndexOutOfBounds exception is a runtime exception thrown only at runtime.
 
 What are the different ways of copying an array into another array?
 Answer:
+Array can be copied to another array using the following ways:
+- Using variable assignment;
+- Create a new array of the same length and copy each element;
+- Use the clone method of the array. Clone methods create a new array of the same size;
+- Use System.arraycopy() method. arraycopy can be used to copy a subset of an array.
 
 What is DFS and BFS?
 Answer:
+DFS sands for Depth First Search, which is an algorithm for traversing or searching tree or graph data structures.
+The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and
+explores as far as possible along each branch before backtracking.
+BFS stands for Breadth First Search, which also an algorithm that relies on the traversal of nodes by the addition of
+the neighbor of every node starting from the root node to the traversal queue. Unlike Depth First Search, all the
+neighbor nodes at a certain depth are explored before moving on to the next level.
 
 What is Recursion?
 Answer:
+Recursion in java is a process in which a method calls itself continuously, this method known as a recursive method.
+This technique provides a way to break complicated problems down into simple problems which are easier to solve.
 
 What are linear and non-linear data Structures?
 Answer:
-
+Linear data structures in Java are those whose elements are sequential and ordered in a way so that there is only one
+ﬁrst element and has only one next element, there is only one last element and has only one previous element, while
+all other elements have a next and a previous element.
+Example: Arrays, Linked Lists, Stacks and Queues.
+Non-Linear Data Structure is a form of data structure where the data elements do not stay arranged linearly or
+sequentially. Since the data structure is non-linear, it does not involve a single level. Therefore, a user cannot
+traverse all of its elements in a single run.
+Example: Trees and Graphs
 
 Outline different sorting algorithms and their time complexities:
-
+List of Algorithm with their time complexity from best to worst:
+- Selection Sort: Ω(n^2)	θ(n^2)	O(n^2)
+- Bubble Sort:    Ω(n)	θ(n^2)	O(n^2)
+- Insertion Sort: Ω(n)	θ(n^2)	O(n^2)
+- Heap Sort:      Ω(n log(n))	θ(n log(n))	O(n log(n))
+- Quick Sort:     Ω(n log(n))	θ(n log(n))	O(n^2)
+- Merge Sort:     Ω(n log(n))	θ(n log(n))	O(n log(n))
+- Bucket Sort:    Ω(n+k)	θ(n+k)	O(n^2)
+- Radix Sort:     Ω(nk)	θ(nk)	O(nk)
+- Count Sort:     Ω(n+k)	θ(n+k)	O(n+k)
