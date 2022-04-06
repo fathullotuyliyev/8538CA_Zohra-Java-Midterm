@@ -399,15 +399,11 @@ an object which takes 128 bits (16 bytes) to store its int value.
 
 Why are Strings considered to be immutable in Java?
 Answer:
-The String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading.
-The reason of making string final is to destroy the immutability and to not allow others to extend it.
-The String objects are cached in the String pool, and it makes the String immutable.
-- The same string variable can be referred to by more than one string variable in the pool. String interning cannot
-be possible if the String would not be immutable.
-- If Strings are not immutable, it will pose a serious security threat to the application.
-- The String is safe for multithreading because of its immutableness. Different threads can access a single String
-instance.
-- Immutability gives the security of loading the correct class by Classloader.
+In Java, string objects are immutable in nature which simply means once the String object is created its state cannot
+be modified. Whenever you try to update the value of that object instead of updating the values of that particular
+object, Java creates a new string object. Java String objects are immutable as String objects are generally cached
+in the String pool. Since String literals are usually shared between multiple clients, action from one client might
+affect the rest. It enhances security, caching, synchronization, and performance of the application.
 
 What is constructor chaining in Java?
 Answer:

@@ -2,51 +2,133 @@
 
 Why do we need data structure?
 Answer:
+Data structure and algorithms are two of the most important aspects of computer science. Data structures allow us to
+organize and store data, while algorithms allow us to process that data in a meaningful way. Learning data structure
+and algorithms will help us become better programmers. we will be able to write codes that are more efficient and more
+reliable. We will also be able to solve problems more quickly and more effectively.
 
 What are the various operations that can be performed on different data structures?
 Answer:
+The possible operations that can be performed on different data structure are:
+Creating, traversing, insertion, deletion, searching, sorting, destroying, selection, updating,  splitting and Merging.
 
 When would we use data structures in the real world?
 Answer:
+We use data structure in real-world when:
+- We wish to store the contacts on our phones, then the software will simply place all our contacts in an array.
+- Using images, those images are linked with each other, that means an image viewer software uses a linked list to view
+the previous and the next images using the previous and next buttons.
+- Using any webpage, web pages can be accessed using the previous and the next URL links which are linked using
+linked list.
+- Operating System uses queue for job scheduling.
+- Most of the internet requests and processes use queues.
+- GPS navigation system uses short path APIs.
+- Databases use tree data structures for indexing.
+- Every time we type something to be searched in Google Chrome or other browsers, it generates the desired output based
+on the principle of hashing.
 
 What is an Array?
 Answer:
+An Array is a collection of variables of the same type, the variables in the array are ordered and each have an index.
 
 What is the difference between Array and ArrayList?
 Answer:
+- An Array cannot contain values of different data types, but an ArrayList can contain values of different data types.
+- The Array size must be defined at the time of declaration, however the ArrayList size can be dynamically changed.
+- An Array need to specify the index in order to add data, whereas an ArrayList does not need to specify the index.
+- Arrays are not type parameterized, however ArrayLists are.
+- Arrays can contain primitive data types as well as objects, but Arraylists can contain only objects, no primitive
+data types are allowed
 
 What is a LinkedList?
 Answer:
+A LinkedList is a linear data structure where the elements are not stored in contiguous locations and every element
+is a separate object with a data part and address part. The elements are linked using pointers and addresses. Each
+element is known as a node. Due to the dynamicity and ease of insertions and deletions, they are preferred over the
+arrays.
+Since a LinkedList acts as a dynamic array, we do not have to specify the size while creating it, the size of the list
+automatically increases when we dynamically add and remove items.
 
 How is an Array different from LinkedList?
 Answer:
+- Array elements can be accessed randomly using the array index, however Random accessing is not possible in a LinkedList.
+The elements will have to be accessed sequentially;
+- In an Array, data elements are stored in contiguous locations in memory, whereas LinkedList elements can be stored
+anywhere and a reference is created for the new element using pointers;
+- Insertion and Deletion operations are costlier since the memory locations are consecutive and fixed in an Array, but
+Insertion and Deletion operations are fast and easy in a LinkedList;
+- The size of an Array must be specified at the time of Array declaration/initialization, However the Size of a
+LinkedList grows/shrinks as and when new elements are inserted/deleted;
+- An Array memory is allocated during compile time (Static memory allocation), but A LinkedList memory is allocated
+during the run-time (Dynamic memory allocation).
 
 What is a Queue?
 Answer:
+The Java Queue interface, represents a data structure designed to have elements inserted at the end of the queue,
+and elements removed from the beginning of the queue. This is similar to how a queue in a supermarket works.
+A queue is a data structure that which allows the principal of FIFO(First In First Out). The elements are inserted at
+the end of the queue and are deleted from the beginning of the queue.
 
 What is a Stack (referring to data structures)?
 Answer:
+The stack is a linear data structure that is used to store the collection of objects. It is based on the order of LIFO
+(Last In First Out). Java collection framework provides many interfaces and classes to store the collection of objects.
+One of them is the Stack class that provides different operations such as push, pop, search, etc.
 
 What is FIFO and LIFO?
 Answer:
+FIFO(First In First Out) is a method for handling data structures where the first element is processed first and the
+newest element is processed last.
+LIFO(Last In First Out) is same as LIFI (Fist In Last Out). It is a method for handling data structures where the last
+element is processed first and the first element is processed last.
+FIFO is implemented by Queues, and LIFO is implemented by Stacks.
 
 Explain Big O Notation?
 Answer:
+Big O Notation is the language we use to describe the complexity of an algorithm. In other words, Big O Notation is the
+language we use when talking about how long an algorithm takes to run. It is how we compare the efficiency of different
+approaches to a problem.
+With Big O Notation we express the runtime in terms of -how quickly it grows relative to the input, as the input gets
+larger. Being that, it is difficult to determine the exact runtime of an algorithm. It depends on the speed of the
+computer processor. So instead of talking about the runtime directly, we use Big O Notation to talk about how quickly
+the runtime grows. Since we are measuring how quickly our runtime grows, we need to express our speed in terms of
+something else. With Big O Notation, we use the size of the input, which we call “n”. So we can say things like the
+runtime grows “on the order of the size of the input” (O(n)) or “on the order of the square of the size of the input”
+(O(n²)).
 
 What is the best case to search an element from an array?
 Answer:
+The best case of the unsorted array is O(n).
 
 What is the worst case to search an element from an array?
 Answer:
+The worst case is also O(n). Why the worst case of the unsorted array is O(n) because the
+algorithm have to search for all the elements, what if the element is in the last index of the array?
 
 Describe what a tree data structure is?
 Answer:
+A Tree data structure is a non-linear data structure where data objects are generally organized in terms of hierarchical
+relationship. The structure is non-linear in the sense that, unlike Arrays, Linked Lists, Stack and Queues, data in a
+tree is not organized linearly. A binary tree is a recursive tree data structure where each node can have 2 children
+at most.
 
 Describe what a graph data structure is?
 Answer:
+A graph data structure mainly represents a network connecting various points. These points are termed as vertices and
+the links connecting these vertices are called "Edges". So a graph g is defined as a set of vertices V and edges E
+that connect these vertices.
+Graphs are mostly used to represent various networks like computer networks, social networks, etc. They can also be
+used to represent various dependencies in software or architectures. These dependency graphs are very useful in
+analyzing the software and also at debugging time.
 
 What is the difference between the HashTable and HashMap?
 Answer:
+- A Hashtable is synchronized, it is thread-safe and can be shared with many threads, whereas a HashMap is non
+synchronized, and it cannot be shared between many threads without proper synchronization code.
+- A Hashtable does not permit any null key or value, whereas a HashMap permits one null key and multiple null values.
+- Hashtable was present in earlier versions of java, but HashMap is a new class introduced in JDK 1.2
+- Hashtable is slower than HashMap.
+- Hashtable is traversed through Enumerator and Iterator, but HashMap  is traversed through the iterator.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
 Answer:
