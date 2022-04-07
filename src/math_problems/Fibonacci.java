@@ -9,7 +9,16 @@ public class Fibonacci {
      **/
 
     public static void main(String[] args) {
-
+        int maxNumber = 40;
+        int previousNumber = 0;
+        int nextNumber = 1;
+        System.out.println("Fibonacci Series of "+maxNumber+"numbers:");
+        for(int i=1; i<=40; ++i){
+            System.out.println(previousNumber+" ");
+            int sum = previousNumber + nextNumber;
+            previousNumber = nextNumber;
+            nextNumber = sum;
+        }
     }
 
 }
