@@ -10,5 +10,16 @@ public class Palindrome {
      */
 
     // Implement here
+    public static void main(String args[]){
 
+        String myString = "level";
+        StringBuffer buffer = new StringBuffer(myString);
+        buffer.reverse();
+        String data = buffer.toString();
+        if(myString.equals(data)){
+            System.out.println("Given String is palindrome");
+        }else{
+            System.out.println("Given String is not palindrome");
+        }
+    }
 }

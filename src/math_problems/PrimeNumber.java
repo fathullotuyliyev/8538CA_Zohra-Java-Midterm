@@ -26,7 +26,7 @@ public class PrimeNumber {
                     counter = counter + 1;
                 }
             }
-            if (counter == 2)
+            if (counter == 3)
             {
                 primeNumbers = primeNumbers + i + " ";
             }

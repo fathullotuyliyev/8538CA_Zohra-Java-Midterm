@@ -16,12 +16,12 @@ public class FindMissingNumber {
         System.out.println("Missing number from array array: "+missingNumber(array));
 
     }
-        public static int missingNumber(int[] arr){
-            int n = arr.length+1;
+        public static int missingNumber(int[] array){
+            int n = array.length+1;
             int sum = n * (n+1)/2;
             int restSum = 0;
-            for (int i = 0; i < arr.length; i++){
-                restSum+=arr[i];
+            for (int i = 0; i < array.length; i++){
+                restSum+=array[i];
             }
             int missingNumber=sum-restSum;
             return missingNumber;

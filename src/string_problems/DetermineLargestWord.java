@@ -11,10 +11,16 @@ public class DetermineLargestWord {
          Your solution should return a map containing the length of the word as the key & the word itself as the value
             "10: biological"
          */
-        String s = "Human brain is a biological learning machine";
-        Map<Integer, String> wordNLength = findTheLargestWord(s);
+       String s = "Human brain is a biological learning machine";
+       Map<Integer, String> wordNLength = findTheLargestWord(s);
 
-
+//        wordNLength.put(1, "Human");
+//        wordNLength.put(2, "brain");
+//        wordNLength.put(3, "is");
+//        wordNLength.put(4, "a");
+//        wordNLength.put(5, "biological ");
+//        wordNLength.put(6, "learning");
+//        wordNLength.put(7, "machine");
     }
 
     public static Map<Integer, String> findTheLargestWord(String wordGiven) {

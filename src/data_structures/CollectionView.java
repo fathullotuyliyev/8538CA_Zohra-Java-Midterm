@@ -6,7 +6,7 @@ public class CollectionView {
 
     public static void main(String[] args) {
         /*
-         Map is created and some data_structures.data is inserted into it.
+         Map is created and some data is inserted into it.
          Retrieve the Collection view of the values present in map
          */
 
@@ -18,6 +18,8 @@ public class CollectionView {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
+
+        System.out.println("Collection view is: " + map.values());
     }
 
 }
