@@ -13,7 +13,7 @@ public class Factorial {
      * @return
      */
 
-        private static int factRecursive(int number) {
+        static int factRecursive(int number) {
             if (number == 1)
                 return 1;
             return number * factRecursive(number - 1);
