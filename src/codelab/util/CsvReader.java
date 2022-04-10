@@ -1,13 +1,15 @@
 package codelab.util;
 
 import codelab.Student;
+import com.google.protobuf.Value;
+import com.mysql.cj.conf.BooleanPropertyDefinition;
 
+import javax.sound.sampled.Line;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class CsvReader {
 
@@ -19,7 +21,7 @@ public class CsvReader {
 
     public static void main(String[] args) {
 
-        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster.csv";
+        String csvFilePath = System.getProperty("user.dir") + "\\src\\codelab\\data\\status\\roster.csv";
         String row;
         String csvSplitBy = ",";
         BufferedReader br;
@@ -36,6 +38,20 @@ public class CsvReader {
                 String[] rowArray = row.split(csvSplitBy);
                 roster.add(new Student(rowArray[5].replace("\"", ""), rowArray[4].replace("\"",
                         ""), Integer.parseInt(rowArray[10])));
+
+                Scanner s = new Scanner(new File("Data.text"));
+                //create an ArrayList
+                ArrayList<Integer> listI = new ArrayList<Integer>();
+                ArrayList<String> listS = new ArrayList<String>();
+                //add students to the ArrayList
+                while(s.hasNextLine())
+                    listS.add(s.nextLine());
+//                Integer[] CorrectUnassigned = lineNumber.split(",");
+//                int score=Integer.parseInt(CorrectUnassigned[]);
+//                sum = sum + score;
+//                count++;
+
+
             }
         } catch (IOException e) {
             e.printStackTrace();

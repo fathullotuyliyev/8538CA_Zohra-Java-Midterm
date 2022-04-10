@@ -121,26 +121,7 @@ public class Sorting {
 
     public int[] quickSort(int[] array) {
 
-//        private int partition(int arr[],int begin,int end) {
-//            int pivot = arr[end];
-//            int i = (begin-1);
-//
-//            for (int j = begin; j < end; j++) {
-//                if (arr[j] <= pivot) {
-//                    i++;
-//
-//                    int swapTemp = arr[i];
-//                    arr[i] = arr[j];
-//                    arr[j] = swapTemp;
-//                }
-//            }
-//
-//            int swapTemp = arr[i+1];
-//            arr[i+1] = arr[end];
-//            arr[end] = swapTemp;
-//
-//            //return i+1;
-//        }
+
         return array;
   }
 
@@ -157,7 +138,7 @@ public class Sorting {
         }
         return array;
     }
-    private void heapify(int arr[], int n, int i){
+    private int[] heapify(int[] arr, int n, int i){
         int largest = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
@@ -173,7 +154,7 @@ public class Sorting {
         }
 
 
-        //return array;
+        return arr;
     }
 
     public int[] bucketSort(int[] array) {

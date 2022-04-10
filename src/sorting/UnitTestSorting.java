@@ -14,6 +14,7 @@ public class UnitTestSorting {
 
         // Create instance of Sort class
         Sorting sorting = new Sorting();
+        sorting.insertionSort(unSortedArray);
 
         // Pass the unsorted array to selectionSort() method (or any method you want to unit test) from Sort class
         sorting.selectionSort(unSortedArray);

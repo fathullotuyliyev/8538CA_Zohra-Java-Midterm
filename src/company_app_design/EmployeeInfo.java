@@ -20,6 +20,27 @@ public class EmployeeInfo {
      * Once you're done with designing this EmployeeInfo class, go to the Company Employee class to test
      */
 
+    private String firstname, lastname, address, department, email;
+    private int employeeId, salary;
+
+    public EmployeeInfo(String first,String last, String add, String depart, String eml) {
+     firstname = first;
+     lastname = last;
+     address = add;
+     department = depart;
+     email = eml;
+//        public void setFirstName(String first){
+//            firstname = first;
+//            public String getFirstName();
+//            return firstname;
+//        }
+
+
+    }
+    private EmployeeInfo(int employeeId, int salary){
+
+    }
+
     // Make sure to declare and use static, non-static & final fields
     static final String companyName = "Tesla";
 

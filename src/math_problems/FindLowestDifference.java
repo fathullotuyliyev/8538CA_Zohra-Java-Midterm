@@ -15,5 +15,7 @@ public class FindLowestDifference {
         int[] array2 = {18, 25, 41, 47, 17, 36, 14, 19, -15};
 
 
-    }
-}
+        }
+        }
+
+

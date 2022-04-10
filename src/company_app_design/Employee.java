@@ -23,4 +23,11 @@ public interface Employee {
 
     void benefits();
 
-}
+
+    static void main(String[] args) {
+
+    }
+
+
+    }
+
